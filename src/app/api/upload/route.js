@@ -21,11 +21,9 @@ export async function POST(request) {
       const imageBuffer = Buffer.from(imageData, "base64");
       await writeFile(uploadDirectory, imageBuffer);
       return NextResponse.json({
-        messege: `Image saved successfully!; size:${
-          imageBuffer.byteLength
-        } , ImageBuffer length: ${(imageBuffer.length / 1000).toFixed(
-          2
-        )} KB,  path:${uploadDirectory}`,
+        messege: `Image saved successfully!; size: ${(
+          imageBuffer.length / 1000
+        ).toFixed(2)} KB,  path:${uploadDirectory}`,
       });
     } else {
       //file is not image, handle it like other files
