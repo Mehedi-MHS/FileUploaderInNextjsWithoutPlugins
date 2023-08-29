@@ -1,6 +1,6 @@
 ## Description
 **This is a nextjs 13 file uploader project with auto image resizer**. 
-I have not used any thirdparty plugins like formidable, multer or sharp.
+I have not used any third party plugins like formidable, multer or sharp.
 ## Key fearutes
 - Auto image resize during upload.
 - You can upload any type of file.
