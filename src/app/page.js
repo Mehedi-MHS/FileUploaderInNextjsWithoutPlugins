@@ -71,7 +71,7 @@ export default function Home() {
       ["jpg", "png", "gif"].includes(getExtension(selected.name)) ? (
         <img
           src={selected.data ? selected.data : null}
-          style={{ width: "100vmin" }}
+          style={{ width: "100vmin", margin: "10px auto" }}
         />
       ) : null}
       <br />
